@@ -1,5 +1,10 @@
 package main
 
+import (
+  //"fmt"
+  "github.com/robsonandradev/basics/package"
+)
+
 func main() {
   //runHello()
   //runVariables()
@@ -7,5 +12,9 @@ func main() {
   //runArrays()
   //createSlice()
   //runMaps()
-  runPointer()
+  //runPointer()
+  //runConditionalStatements()
+  //runFunctions()
+  //fmt.Println(basics.Sum(1, 2))
+  basics.RunLoops()
 }
