@@ -16,5 +16,6 @@ func main() {
   //runConditionalStatements()
   //runFunctions()
   //fmt.Println(basics.Sum(1, 2))
-  basics.RunLoops()
+  //basics.RunLoops()
+  basics.RunErrorHandlers()
 }
