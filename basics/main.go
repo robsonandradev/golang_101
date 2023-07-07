@@ -2,13 +2,13 @@ package main
 
 import (
   //"fmt"
-  "github.com/robsonandradev/basics/package"
+  //"github.com/robsonandradev/basics/package"
 )
 
 func main() {
   //runHello()
   //runVariables()
-  //runStructSample()
+  runStructSample()
   //runArrays()
   //createSlice()
   //runMaps()
@@ -17,5 +17,5 @@ func main() {
   //runFunctions()
   //fmt.Println(basics.Sum(1, 2))
   //basics.RunLoops()
-  basics.RunErrorHandlers()
+  //basics.RunErrorHandlers()
 }

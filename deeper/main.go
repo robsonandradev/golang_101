@@ -4,5 +4,7 @@ func main() {
   //RunAssertation()
   //Payment()
   //runContexServer()
-  RunChannels()
+  //RunChannels()
+  //RunBuffer()
+  RunSelect()
 }

@@ -9,9 +9,22 @@ type Employee struct {
 }
 
 func runStructSample() {
-  initializeWithoutNameFields()
-  initializeWithNamedFields()
-  initializeWithSomeFieldsNamed()
+  //initializeWithoutNameFields()
+  //initializeWithNamedFields()
+  //initializeWithSomeFieldsNamed()
+  pointerWithStructs()
+}
+
+func deleteItems(employee *Employee) {
+  employee.name = "john Travolta"
+  fmt.Println(employee)
+}
+
+func pointerWithStructs() {
+  employee := Employee{"john wick", 35, 100000.00}
+  fmt.Println(employee)
+  deleteItems(&employee)
+  fmt.Println(employee)
 }
 
 func initializeWithoutNameFields() {
