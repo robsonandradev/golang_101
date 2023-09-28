@@ -26,26 +26,18 @@ func (l *LinkedList) Append(data string) {
     l.head = &Node{data: data, next: nil}
     return
   }
-  for {
-    if currentNode.next == nil {
-      currentNode.next = &Node{data: data, next: nil}
-      break
-    } else {
-      currentNode = currentNode.next
-    }
+  for currentNode.next != nil {
+    currentNode = currentNode.next
   }
+  currentNode.next = &Node{data: data, next: nil}
 }
 
 func (l *LinkedList) Display() {
   currentNode := l.head
   items := []string{}
-  for {
-    if currentNode != nil {
-      items = append(items, currentNode.data)
-      currentNode = currentNode.next
-    } else {
-      fmt.Print(items)
-      break
-    }
+  for currentNode != nil {
+    items = append(items, currentNode.data)
+    currentNode = currentNode.next
   }
+  fmt.Print(items)
 }
